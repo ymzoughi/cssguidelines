@@ -2,6 +2,8 @@ Conseils et directives pour une rédaction CSS de haut niveau
 =============
 
 
+##* Ce document n'est pas le guidelines, mais plutôt un guidelines* 
+
 ##1- Largeur des colonnes##
 
 il est fortement recommandé qu'une ligne dans un fichier CSS ne dépasse pas les 80 caractères, et cela pour les raisons suivantes:
