@@ -155,3 +155,11 @@ Les espaces entres les lignes nous permet d'avoir un très bonne visibilité sur
 - Une ligne vide entre les ensembles de règles étroitement liés
 - Deux lignes vides entre les ensembles de règles vaguement liés
 - Cinq lignes vides entre deux sections.
+
+##7- Conventions de nommage
+
+Les conventions de nommage en CSS sont extrêmement utiles pour rendre votre code plus strict, plus transparent et plus informatif.
+
+Toutes les chaînes dans les classes sont délimitées par un trait d'union (-).
+
+En CSS il ne faut pas utiliser les CamelCase
