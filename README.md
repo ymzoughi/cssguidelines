@@ -95,7 +95,7 @@ Exemple:
 
 Cette methode d'indentation de code permet aux developpeurs d'avoir une visibilité sur la structure HTML
 
-###alignement
+###Alignement
 
 Exemple:
 
@@ -118,3 +118,40 @@ Exemple:
     padding-left:  10px;
 }
 ```
+
+###Espaces
+
+Exemples: 
+
+```
+/*------------------------------------*\
+    #FOO
+\*------------------------------------*/
+
+.foo {}
+
+    .foo__bar {}
+
+
+.foo--baz {}
+
+
+
+
+
+/*------------------------------------*\
+    #BAR
+\*------------------------------------*/
+
+.bar {}
+
+    .bar__baz {}
+
+    .bar__foo {}
+```
+
+Les espaces entres les lignes nous permet d'avoir un très bonne visibilité sur nos régles et sections :
+
+- Une ligne vide entre les ensembles de règles étroitement liés
+- Deux lignes vides entre les ensembles de règles vaguement liés
+- Cinq lignes vides entre deux sections.
