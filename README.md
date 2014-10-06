@@ -30,5 +30,27 @@ Pour cela nous aimons voir:
 
 - 4 espaces au lieux d'une tabulation
 - Une propriété par ligne
-- Bien utiliser les espaces  
+- Bien utiliser les espaces
+- 
+##4- Titrage 
 
+Le titrage est une notion très important lorsqu'on écrit un fichier de style. C'est un moyen de définir une section ou un module.
+
+Un titre doit être précédé par un dièse (#), pour le but de faciliter les recherche via les commandes **grep** ou autres.
+
+Si nous travaillons sur un projet où chaque section a son propre fichier, ce titre devrait apparaître en haut de chacun. Si nous travaillons sur un projet avec plusieurs sections par fichier, chaque titre doit être précédé par cinq retours chariot. Cet espace peut rendre plus facile de repérer les titres lorsque vous faites défiler les fichiers volumineux
+```
+/*------------------------------------*\
+    #A-SECTION
+\*------------------------------------*/
+
+.selector {}
+
+
+
+
+
+/*------------------------------------*\
+    #ANOTHER-SECTION
+\*------------------------------------*/
+```
