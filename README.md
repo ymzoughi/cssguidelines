@@ -1,6 +1,5 @@
 cssguidelines
 =============
 
-a guidelines for css coding
+10 Régles pour bien écrire des fichier de style
 
-test
