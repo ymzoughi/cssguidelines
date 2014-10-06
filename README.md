@@ -2,7 +2,7 @@ Conseils et directives pour une rédaction CSS de haut niveau
 =============
 
 
-##* Ce document n'est pas le guidelines, mais plutôt un guidelines* 
+* Ce document n'est pas le guidelines, mais plutôt un guidelines* 
 
 ##1- Largeur des colonnes##
 
