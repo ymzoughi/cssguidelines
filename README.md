@@ -78,3 +78,43 @@ Il est fortement recommandé d'écrire le code CSS en respectant les régles sui
     color: red;
 }
 ```
+
+##6- Indentation, alignement et espaces
+
+###Indentation
+
+Exemple: 
+
+```
+.foo {}
+
+    .foo__bar {}
+
+        .foo__baz {}
+```
+
+Cette methode d'indentation de code permet aux developpeurs d'avoir une visibilité sur la structure HTML
+
+###alignement
+
+Exemple:
+
+```
+.foo {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.bar {
+    position: absolute;
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+    margin-right: -10px;
+    margin-left:  -10px;
+    padding-right: 10px;
+    padding-left:  10px;
+}
+```
