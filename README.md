@@ -21,3 +21,14 @@ Pour eviter d'avoir un fichier CSS contenant plus de 1000 ligne, il est bien de 
 Cette pratique nous permet de séparer le code CSS selon un choix prédefini (CSS par page / CSS par module), et assurer la maintenabilité de nos travaux.
 Pour faire des appels à des fichier des styles nous pouvons utilser La règle **@import**
 
+
+##3- Syntaxe et formatage
+
+Dans une équipe, il faut avoir un standard de rédaction de code dans le but de faciliter la maintenance et laisser la possibilité aux cooéquipier de travailler sur nos codes en les gardant toujours propres.
+
+Pour cela nous aimons voir:
+
+- 4 espaces au lieux d'une tabulation
+- Une propriété par ligne
+- Bien utiliser les espaces  
+
