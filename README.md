@@ -1,4 +1,4 @@
-10 conseils et directives pour une rédaction CSS de haut niveau
+Conseils et directives pour une rédaction CSS de haut niveau
 =============
 
 
@@ -19,5 +19,5 @@ Il y aura des exceptions inévitables à cette règle, comme les URL, dans ce ca
 
 Pour eviter d'avoir un fichier CSS contenant plus de 1000 ligne, il est bien de diviser vos fichiers de styles en plusieurs fichiers.
 Cette pratique nous permet de séparer le code CSS selon un choix prédefini (CSS par page / CSS par module), et assurer la maintenabilité de nos travaux.
-Pour faire des appels à des fichier des styles nous pouvons utilser La règle *@import*
+Pour faire des appels à des fichier des styles nous pouvons utilser La règle **@import**
 
