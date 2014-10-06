@@ -35,7 +35,7 @@ Pour cela nous aimons voir:
 
 ##4- Titrage 
 
-Le titrage est une notion très important lorsqu'on écrit un fichier de style. C'est un moyen de définir une section ou un module.
+Le titrage est une notion très importante lorsqu'on écrit un fichier de style. C'est un moyen de définir une section ou un module.
 
 Un titre doit être précédé par un dièse (#), pour le but de faciliter les recherche via les commandes **grep** ou autres.
 
@@ -54,4 +54,27 @@ Si nous travaillons sur un projet où chaque section a son propre fichier, ce ti
 /*------------------------------------*\
     #ANOTHER-SECTION
 \*------------------------------------*/
+```
+
+##5- Régles d'écriture
+
+Il est fortement recommandé d'écrire le code CSS en respectant les régles suivantes: 
+
+- sélecteurs connexes sur la même ligne
+- sélecteurs indépendants sur de nouvelles lignes
+- un espace avant notre accolade ouvrante ({) 
+- propriétés et les valeurs sur la même ligne
+- un espace après notre propriété-valeur délimitant deux points (:)
+- chaque déclaration dans sa propre nouvelle ligne
+- l'accolade d'ouverture ({) sur la même ligne que notre dernière sélection 
+- notre accolade fermante (}) sur sa propre nouvelle ligne; 
+- un point-virgule de fuite (;) lors de notre dernière déclaration.
+
+```
+.foo, .foo--bar,
+.baz {
+    display: block;
+    background-color: green;
+    color: red;
+}
 ```
