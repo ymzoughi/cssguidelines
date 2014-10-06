@@ -163,3 +163,7 @@ Les conventions de nommage en CSS sont extrêmement utiles pour rendre votre cod
 Toutes les chaînes dans les classes sont délimitées par un trait d'union (-).
 
 En CSS il ne faut pas utiliser les CamelCase
+
+
+##8- Utilisation des langages dynamiques de génération de feuilles de style (Less, SASS ..)
+
