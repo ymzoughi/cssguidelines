@@ -1,5 +1,5 @@
 cssguidelines
 =============
 
-10 Régles pour bien écrire des fichier de style
+10 conseils et directives pour une rédaction CSS de haut niveau
 
