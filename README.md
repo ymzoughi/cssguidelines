@@ -168,4 +168,14 @@ En CSS il ne faut pas utiliser les CamelCase
 
 
 ##8- Utilisation des langages dynamiques de génération de feuilles de style (Less, SASS ..)
-### LESS
+En ecrivant du code CSS dans des grands projets, nous sommes parfois obligés de réécrire le même code pour plusieurs selecteurs, ce qui rend la feuille de style non maintenable et compliquée à lire, d'ou l'utilsation des langages dynamiques
+### A) LESS
+LESS, comme l'indique son nom, c'est ecrire moins, est un Préprocesseur CSS basé sur le langage JavaScript.
+LESS permet d'ajouter des notions manquantes à la CSS telque:
+- La declaration des variables
+- Les opérations de calculs dynamiques
+- La factorisation de parties de code
+- Les imbrications de sélecteurs
+
+**Utilisation**
+
