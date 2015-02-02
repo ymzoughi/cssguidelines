@@ -181,3 +181,14 @@ LESS permet d'ajouter des notions manquantes à la CSS telque:
 ```
 $ npm install -g less
 ```
+**Command-line**
+```
+$ lessc styles.less
+```
+Ou pour définir le fichier de sortie (ajouter -x en option pour génerer le fichier minimisé)
+```
+$ lessc styles.less > styles.css
+```
+**Usage Client-side**
+
+**Usage en developpement**
