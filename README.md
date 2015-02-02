@@ -177,5 +177,7 @@ LESS permet d'ajouter des notions manquantes à la CSS telque:
 - La factorisation de parties de code
 - Les imbrications de sélecteurs
 
-**Utilisation**
-
+**Installation**
+```
+$ npm install -g less
+```
