@@ -12,25 +12,26 @@ il est fortement recommandé qu'une ligne dans un fichier CSS ne dépasse pas le
 - Ne pas scroller pour lire la valeur d'une propriété 
 - Assurer la possibilité d'ouvrir deux fichiers côte à côte
 - Assurer la possiblité d'écrire des commentaires sur la même ligne
-- Avoir la possibilité d'afficher la CSS sur des sites comme GitHub et bitbucket
+- Avoir la possibilité d'afficher le code CSS sur des sites comme GitHub et bitbucket
 
-Il y aura des exceptions inévitables à cette règle, comme les URL, dans ce cas nous pouvon igonrer cette régle
+Il y aura des exceptions inévitables à cette règle, comme les URL, dans ce cas nous pouvons igonrer ce point
 
 
 ##2- Diviser la CSS en plusieurs fichiers##
 
-Pour eviter d'avoir un fichier CSS contenant plus de 1000 ligne, il est bien de diviser vos fichiers de styles en plusieurs fichiers.
+Pour eviter d'avoir un fichier CSS contenant plus de 1000 lignes, il est bien de diviser vos fichiers de styles en plusieurs fichiers.
 Cette pratique nous permet de séparer le code CSS selon un choix prédefini (CSS par page / CSS par module), et assurer la maintenabilité de nos travaux.
-Pour faire des appels à des fichier des styles nous pouvons utilser La règle **@import**
+Pour faire des appels à des fichiers des styles nous pouvons utilser la règle **@import**
 
 
 ##3- Syntaxe et formatage
 
-Dans une équipe, il faut avoir un standard de rédaction de code dans le but de faciliter la maintenance et laisser la possibilité aux cooéquipier de travailler sur nos codes en les gardant toujours propres.
+Dans une équipe, il faut avoir un standard de rédaction de code dans le but de faciliter sa maintenance.
+Il permet aussi aux coéquipiers de travailler sur le même code en les gardant toujours propres.
 
 Pour cela nous aimons voir:
 
-- 4 espaces au lieux d'une tabulation
+- 4 espaces au lieux d'une tabulation (ou bien paramétrer la tabulation dans son IDE à 4 espaces)
 - Une propriété par ligne
 - Bien utiliser les espaces
 
@@ -152,7 +153,7 @@ Exemples:
     .bar__foo {}
 ```
 
-Les espaces entres les lignes nous permet d'avoir un très bonne visibilité sur nos régles et sections :
+Les espaces entres les lignes nous permettent d'avoir un très bonne visibilité sur nos régles et sections :
 
 - Une ligne vide entre les ensembles de règles étroitement liés
 - Deux lignes vides entre les ensembles de règles vaguement liés
@@ -166,13 +167,19 @@ Toutes les chaînes dans les classes sont délimitées par un trait d'union (-).
 
 En CSS il ne faut pas utiliser les CamelCase
 
+Utiliser des noms de classe explicites et de préférence en anglais (pour éviter les caractères accentués) 
+
+Exemples: 
+
+    .bloc-newsletter, .section-blog, .article-news... 
+
 
 ##8- Utilisation des langages dynamiques de génération de feuilles de style (Less, SASS ..)
-En ecrivant du code CSS dans des grands projets, nous sommes parfois obligés de réécrire le même code pour plusieurs selecteurs, ce qui rend la feuille de style non maintenable et compliquée à lire, d'ou l'utilsation des langages dynamiques
+En ecrivant du code CSS dans de grands projets, nous sommes parfois obligés de réécrire le même code pour plusieurs selecteurs, ce qui rend la feuille de style non maintenable et compliquée à lire, d'ou l'utilsation des langages dynamiques
 ### A) LESS
-LESS, comme l'indique son nom, c'est ecrire moins, est un Préprocesseur CSS basé sur le langage JavaScript.
+LESS, comme l'indique son nom, c'est ecrire moins. C'est un Préprocesseur CSS basé sur le langage JavaScript.
 LESS permet d'ajouter des notions manquantes à la CSS telque:
-- La declaration des variables
+- La déclaration des variables
 - Les opérations de calculs dynamiques
 - La factorisation de parties de code
 - Les imbrications de sélecteurs
