@@ -27,7 +27,7 @@ Pour faire des appels à des fichiers des styles nous pouvons utilser la règle 
 ##3- Syntaxe et formatage
 
 Dans une équipe, il faut avoir un standard de rédaction de code dans le but de faciliter sa maintenance.
-Il permet aussi aux coéquipiers de travailler sur le même code en les gardant toujours propres.
+Il permet aussi aux coéquipiers de travailler sur le même code en le gardant toujours propres.
 
 Pour cela nous aimons voir:
 
@@ -175,7 +175,7 @@ Exemples:
 
 
 ##8- Utilisation des langages dynamiques de génération de feuilles de style (Less, SASS ..)
-En ecrivant du code CSS dans de grands projets, nous sommes parfois obligés de réécrire le même code pour plusieurs selecteurs, ce qui rend la feuille de style non maintenable et compliquée à lire, d'ou l'utilsation des langages dynamiques
+Dans certains projets, nous sommes parfois obligés de réécrire le même code css pour plusieurs selecteurs, ce qui rend la feuille de style non maintenable et compliquée à lire, d'ou l'utilsation des langages dynamiques
 ### A) LESS
 LESS, comme l'indique son nom, c'est ecrire moins. C'est un Préprocesseur CSS basé sur le langage JavaScript.
 LESS permet d'ajouter des notions manquantes à la CSS telque:
@@ -199,3 +199,111 @@ $ lessc styles.less > styles.css
 **Usage Client-side**
 
 **Usage en developpement**
+
+### A) SASS
+SASS tout comme LESS, est un préprocesseur css basé sur le langage Ruby.
+L'extension des fichiers SASS est .scss
+SASS s'occupera de générer les fichiers .scss en .css
+
+**Installation**
+Il faut d'abord installer Ruby sous windows/Linux. Sous mac Ruby il est pré-installé.
+Ensuite il faut taper les commande :
+```
+$ gem install sass
+```
+
+**Code Impriqué**
+Cette methode ne nous aide pas à comprendre les relations unissant les éléments HTML auxquels nous appliquons un style. 
+Avec l’imbrication, nous pouvons écrire un code SCSS qui est à la fois non redondant et plus facile à suivre :
+
+Exemple :
+ 
+```
+body.home { 
+    .media-unit {
+        border: 1px solid #ccc; 
+        background-color: #fff; 
+        .right {
+            border-left: 1px solid #ccc;
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+Code css généré :
+
+body.home .media-unit {
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+}
+
+body.home .media-unit .right {
+    border-left: 1px solid #ccc;
+}
+
+body.home .media-unit .right h1 {
+    font-size: 24px;
+}
+
+```
+
+**Les variables**
+Les variables Sass sont très utiles pour 2 raisons :
+- elles permettent de modifier le code plus facilement en réduisant les duplications. 
+- elles permettent de nommer la valeur d’une propriété, la couleur par exemple, ce qui permet de comprendre l’intention derrière un style donné.
+
+Exemple :
+ 
+```
+$color-green: "#99cc00"; 
+$site-link-color: $color-green;
+
+a {
+    color: $site-link-color;
+}
+
+.main-menu {
+    color: $site-link-color;
+}
+
+Code css généré :
+
+a {
+    color: #99cc00;
+}
+
+.main-menu {
+    color: #99cc00;
+}
+
+```
+
+**Les mixins**
+Les Mixins sont des ensembles de propriétés ou de règles que vous pouvez inclure, ou “mixer”, dans d’autres règles. 
+Vous les définissez en utilisant le mot clé @mixin et vous les intégrez en utilisant le mot clé @include.
+
+Exemple :
+ 
+```
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+}
+
+.button {
+    @include border-radius('2px'); 
+}
+
+Code css généré :
+
+.button {
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+```
