@@ -206,13 +206,15 @@ L'extension des fichiers SASS est .scss
 SASS s'occupera de générer les fichiers .scss en .css
 
 **Installation**
-Il faut d'abord installer Ruby sous windows/Linux. Sous mac Ruby il est pré-installé.
+
+Il faut d'abord installer Ruby sous windows/Linux. Sous mac Ruby est pré-installé.
 Ensuite il faut taper les commande :
 ```
 $ gem install sass
 ```
 
 **Code Impriqué**
+
 Cette methode ne nous aide pas à comprendre les relations unissant les éléments HTML auxquels nous appliquons un style. 
 Avec l’imbrication, nous pouvons écrire un code SCSS qui est à la fois non redondant et plus facile à suivre :
 
@@ -250,6 +252,7 @@ body.home .media-unit .right h1 {
 ```
 
 **Les variables**
+
 Les variables Sass sont très utiles pour 2 raisons :
 - elles permettent de modifier le code plus facilement en réduisant les duplications. 
 - elles permettent de nommer la valeur d’une propriété, la couleur par exemple, ce qui permet de comprendre l’intention derrière un style donné.
@@ -281,6 +284,7 @@ a {
 ```
 
 **Les mixins**
+
 Les Mixins sont des ensembles de propriétés ou de règles que vous pouvez inclure, ou “mixer”, dans d’autres règles. 
 Vous les définissez en utilisant le mot clé @mixin et vous les intégrez en utilisant le mot clé @include.
 
